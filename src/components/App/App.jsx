@@ -1,7 +1,7 @@
-const todosMock = ["A", "l", "e", "n", "a"];
+// const todosMock = ["A", "l", "e", "n", "a"];
 
 import { useEffect, useState } from "react";
-import { MainSec } from "../Main/MainSec";
+import { TodoList } from "../TodoList/TodoList";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <h1>todoS</h1>
-      <MainSec todos={todos} />
+      <TodoList todos={todos} />
     </>
   );
 }
