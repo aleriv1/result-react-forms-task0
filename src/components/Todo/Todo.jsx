@@ -1,7 +1,9 @@
-export const Todo = ({ todo }) => {
+import styles from "./Todo.module.scss";
+
+export const Todo = ({ todo, completed = false }) => {
   return (
-    <>
-      <li>{todo}</li>
-    </>
+    <li className={`${styles.todo} ${completed ? styles.completed : ""}`}>
+      {todo}
+    </li>
   );
 };

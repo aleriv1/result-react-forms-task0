@@ -6,6 +6,7 @@ import styles from "./App.module.scss";
 
 function App() {
   const [todos, setTodos] = useState([]);
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then((rawResponse) => rawResponse.json())
