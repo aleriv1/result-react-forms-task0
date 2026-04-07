@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { TodoList } from "../TodoList/TodoList";
+import styles from "./App.module.scss";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <>
-      <h1>todoS</h1>
+      <h1 className={styles.header}>todoS</h1>
       <TodoList todos={todos} />
     </>
   );
